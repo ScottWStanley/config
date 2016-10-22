@@ -1,0 +1,10 @@
+ntpd_flags=		# enabled during install
+apmd_flags="-A"
+
+# XDM
+xdm_flags=		# enabled during install
+multicast_host=YES
+hotplugd_flags=
+adsuck_flags="-c /var/adsuck -f /files/resolv.conf /files/hostsfile"
+#pkg_scripts="tor polipo" # per Pereboom
+pkg_scripts="${pkg_scripts} adsuck messagebus mpd"

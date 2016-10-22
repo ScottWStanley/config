@@ -1,0 +1,14 @@
+d1bcbdb7a73a9d63.b none swap sw
+d1bcbdb7a73a9d63.a / ffs rw 1 1
+d1bcbdb7a73a9d63.k /home ffs rw,nodev,nosuid 1 2
+d1bcbdb7a73a9d63.d /tmp ffs rw,nodev,nosuid 1 2
+d1bcbdb7a73a9d63.f /usr ffs rw,nodev 1 2
+d1bcbdb7a73a9d63.g /usr/X11R6 ffs rw,nodev 1 2
+d1bcbdb7a73a9d63.h /usr/local ffs rw,nodev,wxallowed 1 2
+d1bcbdb7a73a9d63.j /usr/obj ffs rw,nodev,nosuid 1 2
+d1bcbdb7a73a9d63.i /usr/src ffs rw,nodev,nosuid 1 2
+d1bcbdb7a73a9d63.e /var ffs rw,nodev,nosuid 1 2
+
+crocodile:/home /croc_home nfs rw 0 0
+crocodile:/media/audio /media/audio nfs rw 0 0
+crocodile:/media/video /media/video nfs rw 0 0
