@@ -1,0 +1,4 @@
+/home -alldirs -network=192.168.1 -mask=255.255.255.0
+/media/audio -alldirs -network=192.168.1 -mask=255.255.255.0
+/media/video -alldirs -network=192.168.1 -mask=255.255.255.0
+#/export/desktop -maproot=root -alldirs -network=192.168.1

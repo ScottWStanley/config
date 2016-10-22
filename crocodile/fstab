@@ -1,0 +1,27 @@
+27c7275e18f5e688.b none swap sw
+27c7275e18f5e688.a / ffs rw 1 1
+27c7275e18f5e688.l /export ffs rw,nodev,nosuid,softdep 1 2
+27c7275e18f5e688.d /tmp ffs rw,nodev,nosuid,softdep 1 2
+27c7275e18f5e688.f /usr ffs rw,nodev,softdep 1 2
+27c7275e18f5e688.g /usr/X11R6 ffs rw,nodev,softdep 1 2
+27c7275e18f5e688.h /usr/local ffs rw,wxallowed,nodev,softdep 1 2
+27c7275e18f5e688.j /usr/obj ffs rw,nodev,nosuid,softdep 1 2
+27c7275e18f5e688.i /usr/src ffs rw,nodev,nosuid,softdep 1 2
+27c7275e18f5e688.e /var ffs rw,nodev,nosuid,softdep 1 2
+27c7275e18f5e688.m /home ffs rw,nodev,nosuid,softdep 1 2
+
+#27c7275e18f5e688.m /home ffs rw,nodev,nosuid,softdep,userquota 1 2
+
+# removable media
+/dev/cd0c /mnt/cdrom cd9660 ro,noauto,nodev 0 0
+/dev/sd0i /mnt/usb msdos rw,noauto 0 0
+
+# storage
+ac18c8d27e66f6ee.a /media/audio ffs rw,nodev,nosuid,softdep 1 2
+a78498acc8d5c91f.a /media/video ffs rw,nodev,nosuid,softdep 1 2
+a3c93920563e1a46.a /dump ffs rw,nodev,nosuid,softdep 1 2
+
+#old 27c7275e18f5e688.k /home ffs rw,nodev,nosuid,softdep,userquota 1 2
+#old 373ef680e9ee75fd.a /media/audio ffs rw,nodev,nosuid,softdep 1 2
+#old f5fe96b263669636.a /media/video ffs rw,nodev,nosuid,softdep 1 2
+#/dev/wd0j /altroot ffs xx 0 0 	# typical setting for altroot

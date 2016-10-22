@@ -1,0 +1,20 @@
+#	$OpenBSD: hosts,v 1.12 2009/03/10 00:42:13 deraadt Exp $
+#
+# Host Database
+#
+# RFC 1918 specifies that these networks are "internal".
+# 10.0.0.0      10.255.255.255
+# 172.16.0.0    172.31.255.255
+# 192.168.0.0   192.168.255.255
+#
+127.0.0.1	localhost
+::1		localhost
+
+192.168.1.1     law.amorphousone.org       law       # net4501 sis1
+192.168.1.31    kuma.amorphousone.org      kuma      # HP Z400 (1) bge0
+192.168.1.32    hancock.amorphousone.org   hancock   # HP Z400 (2) bge0
+192.168.1.33    jinbe.amorphousone.org     jinbe     # Raspberry Pi
+192.168.1.45    crocodile.amorphousone.org crocodile # AMD re0
+
+#50.135.203.221  law.amorphousone.org       law       # net4501 sis0
+#24.104.129.226  cygwin.greenpnt.com    cygwin

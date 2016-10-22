@@ -1,0 +1,18 @@
+#	$OpenBSD: rc.local,v 1.44 2011/04/22 06:08:14 ajacoutot Exp $
+
+# Site-specific startup actions, daemons, and other things which
+# can be done AFTER your system goes into securemode.  For actions
+# which should be done BEFORE your system has gone into securemode
+# please see /etc/rc.securelevel.
+
+echo -n 'Local daemons: '
+
+# Cool running
+apmd -C
+echo 'apmd (cool running)'
+
+# Beep to signal boot completion
+echo CAC > /dev/speaker
+#echo '' | mail -s 'crocodile has risen' amorphous.yet.not@gmail.com
+
+echo '.'
